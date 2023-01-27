@@ -5,7 +5,7 @@ import 'package:greengrocer/src/pages/widgets/quantity_widget.dart';
 import 'package:greengrocer/src/services/utils_services.dart';
 
 class ProductScreem extends StatefulWidget {
-  ProductScreem({
+  const ProductScreem({
     Key? key,
     required this.item,
   }) : super(key: key);

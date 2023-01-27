@@ -25,7 +25,7 @@ class SignInScreen extends StatelessWidget {
                   //Nome do app
                   Text.rich(
                     TextSpan(
-                      style: TextStyle(fontSize: 40),
+                      style: const TextStyle(fontSize: 40),
                       children: [
                         const TextSpan(
                           text: 'Green',

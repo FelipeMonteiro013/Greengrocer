@@ -94,7 +94,7 @@ class ItemTile extends StatelessWidget {
               width: 35,
               decoration: BoxDecoration(
                   color: CustomColors.customSwatchColor,
-                  borderRadius: BorderRadius.only(
+                  borderRadius: const BorderRadius.only(
                     bottomLeft: Radius.circular(15),
                     topRight: Radius.circular(20),
                   )),

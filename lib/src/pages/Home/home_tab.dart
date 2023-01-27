@@ -2,6 +2,7 @@ import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
 import 'package:greengrocer/src/pages/home/components/CategoryTile.dart';
 import 'package:greengrocer/src/config/custom_colors.dart';
+// ignore: library_prefixes
 import 'package:greengrocer/src/config/app_data.dart' as appData;
 import 'package:greengrocer/src/pages/home/components/item_tile.dart';
 
@@ -121,7 +122,7 @@ class _HomeTabState extends State<HomeTab> {
           Expanded(
             child: GridView.builder(
               padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
-              physics: BouncingScrollPhysics(),
+              physics: const BouncingScrollPhysics(),
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2,
                   mainAxisSpacing: 10,
