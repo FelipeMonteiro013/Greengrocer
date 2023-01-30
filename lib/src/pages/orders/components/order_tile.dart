@@ -104,7 +104,10 @@ class OrderTile extends StatelessWidget {
 
             //Botão pagamento
             Visibility(
-              visible: order.status == 'pending_payment',
+              visible: order.status == 'pending_payment' &&
+                  order.overdueDateTime.isAfter(
+                    DateTime.now(),
+                  ),
               child: ElevatedButton.icon(
                 onPressed: () {
                   showDialog(
