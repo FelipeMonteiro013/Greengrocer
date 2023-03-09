@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:greengrocer/src/config/custom_colors.dart';
 import 'package:greengrocer/src/models/order_model.dart';
 import 'package:greengrocer/src/services/utils_services.dart';
 import 'package:qr_flutter/qr_flutter.dart';
@@ -52,14 +51,14 @@ class PaymentDialog extends StatelessWidget {
                   'Vencimento: ${utilsServices.formatDateTime(
                     order.overdueDateTime,
                   )}',
-                  style: TextStyle(fontSize: 12),
+                  style: const TextStyle(fontSize: 12),
                 ),
 
                 //Total
 
                 Text(
                   'Total: ${utilsServices.priceToCurrency(order.total)}',
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 17,
                     fontWeight: FontWeight.bold,
                   ),
